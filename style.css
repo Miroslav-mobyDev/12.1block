@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+
+
+.btn{
+    background-color: #96BB7C; 
+    color:#f0f0f0;
+}
+
+.hero-section {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.features {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.feature-box {
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+
+
+.newsletter {
+    padding: 80px 0;
+    background: #f0f0f0;
+}
+
+.newsletter-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 688px;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .newsletter input {
+        width: 100%;
+    }
+}
+.hero-container{
+display: flex;
+}
+.features-container{
+    
+}
+.row{
+    
+}
+.f-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-courses{
+    background-color:  #FFF2F3;
+    
+}
+.com-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.com-list{
+    font-weight: 700;
+
+}
+.com-el{
+    font-weight: 400;
+    margin-left: 20px;
+}
+.com-img-el{
+    display: flex;
+}
