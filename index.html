@@ -1,157 +1,186 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .animate {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-in-out;
+    }
+    .animate.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body>
 
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Brandname</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-                <a href="#" class="btn btn-outline-success ms-3">Login</a>
-                <a href="#" class="btn btn-success ms-2">Join Us</a>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">LearnBridge</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn-outline-success ms-3">Login</a>
+        <a href="#" class="btn btn-success ms-2">Join Us</a>
+      </div>
+    </div>
+  </nav>
 
-    
-    <header class="hero-section">
-        <div class="container d-flex align-items-center justify-content-between flex-wrap hero-container">
-            <div class="hero-text">
-                <h5 class="text-success">Welcome</h5>
-                <h1 class="fw-bold">HIGH QUALITY<br> COURSES</h1>
-                <p>Find the right instructor for you from over 10,000 teachers</p>
-                <a href="#" class="btn btn-success">Get Quote Now</a>
-                <a href="#" class="btn btn-outline-success">Learn More</a>
-            </div>
-            <div class="hero-image mt-4 mt-md-0">
-                <img src="./heroimg.png" alt="Student" class="img-fluid">
-            </div>
-        </div>
-    </header>
+  <header id="home" class="hero-section animate" data-delay="0">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap hero-container">
+      <div class="hero-text">
+        <h5 class="text-success">Welcome</h5>
+        <h1 class="fw-bold">HIGH QUALITY<br> COURSES</h1>
+        <p>Find the right instructor for you from over 10,000 teachers</p>
+        <a href="#" class="btn btn-success">Get Quote Now</a>
+        <a href="#" class="btn btn-outline-success">Learn More</a>
+      </div>
+      <div class="hero-image mt-4 mt-md-0">
+        <img src="./heroimg.png" alt="Student" class="img-fluid">
+      </div>
+    </div>
+  </header>
 
-    <section class="features py-5">
-        <div class="container ">
-          <h5 class="text-success">Practice Advice</h5>
-          <h2 class="fw-bold">Every Client Matters</h2>
-          <p class="text-muted mb-5">Problems trying to resolve the conflict between physics and Newtonian mechanics</p>
-      
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="feature-box p-4 shadow-sm rounded bg-white h-100 text-center">
-                <img src="./1/f1.svg" alt="Lifetime access" class="mb-3" width="50">
-                <h5 class="fw-bold">Lifetime access</h5>
-                <p class="text-muted">Gradual<br> accumulation of<br> information about </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-box p-4 shadow-sm rounded bg-white h-100 text-center">
-                <img src="./1/f2.svg" alt="Training Courses" class="mb-3" width="50">
-                <h5 class="fw-bold">Training Courses</h5>
-                <p class="text-muted">Gradual<br> accumulation of<br> information about </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="feature-box p-4 shadow-sm rounded bg-white h-100 text-center">
-                <img src="./1/f3.svg" alt="Support" class="mb-3" width="50">
-                <h5 class="fw-bold">Expert Support</h5>
-                <p class="text-muted">Gradual<br> accumulation of<br> information about </p>
-              </div>
-            </div>
+  <section class="features py-5 animate" id="product" data-delay="200">
+    <div class="container">
+      <h5 class="text-success">Practice Advice</h5>
+      <h2 class="fw-bold">Every Client Matters</h2>
+      <p class="text-muted mb-5">Problems trying to resolve the conflict between physics and Newtonian mechanics</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-box p-4 shadow-sm rounded bg-white h-100 text-center">
+            <img src="./1/f1.svg" alt="Lifetime access" class="mb-3" width="50">
+            <h5 class="fw-bold">Lifetime access</h5>
+            <p class="text-muted">Gradual<br> accumulation of<br> information about </p>
           </div>
         </div>
-      </section>
+        <div class="col-md-4">
+          <div class="feature-box p-4 shadow-sm rounded bg-white h-100 text-center">
+            <img src="./1/f2.svg" alt="Training Courses" class="mb-3" width="50">
+            <h5 class="fw-bold">Training Courses</h5>
+            <p class="text-muted">Gradual<br> accumulation of<br> information about </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-box p-4 shadow-sm rounded bg-white h-100 text-center">
+            <img src="./1/f3.svg" alt="Support" class="mb-3" width="50">
+            <h5 class="fw-bold">Expert Support</h5>
+            <p class="text-muted">Gradual<br> accumulation of<br> information about </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-courses py-5 our-corses animate" style="background-color: #FFF2F3;" id="pricing" data-delay="400">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <div class="popular-text" style="max-width: 500px;">
+        <h3 class="fw-bold">Our Popular Courses</h3>
+        <p class="text-muted">Problems trying to resolve the conflict between<br> the two major realms of Classical physics:<br> Newtonian mechanics</p>
+        <a href="#" class="btn btn-outline-success">Learn More</a>
+
+      </div>
+      <div class="popular-image mt-4 mt-md-0">
+        <img src="./1/c1.png" alt="Popular Courses" class="img-fluid" style="max-width: 400px;">
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter text-center animate" style="background-color: white;" data-delay="600">
+    <h5 class="text-success mb-3">Newsletter</h5>
+    <h2 class="fw-bold mb-3">Every Client Matters</h2>
+    <p>Problems trying to resolve the conflict between physics and Newtonian mechanics</p>
+    <form class="d-flex justify-content-center flex-wrap gap-2">
+      <input type="email" class="form-control custom-input" style="max-width: 400px;" placeholder="Your Email">
+      <button class="btn btn-success">Subscribe</button>
+    </form>
+  </section>
+
+  <footer class="text-center py-4" style="background-color: rgb(240, 238, 238);" id="contact">
+  <div class="container">
+    <div class="com-info">
       
+      <ul class="com-list">Company Info
+        <li class="com-el">About Us</li>
+        <li class="com-el">Careers</li>
+        <li class="com-el">Press</li>
+        <li class="com-el">Investors</li>
+      </ul>
 
-    
-    <section class="popular-courses py-5 our-corses"  style="background-color:  #FFF2F3; ">
-        <div class="container d-flex align-items-center justify-content-between flex-wrap">
-            <div class="popular-text" style="max-width: 500px;">
-                <h3 class="fw-bold">Our Popular Courses</h3>
-                <p class="text-muted">Problems trying to resolve the conflict between<br> the two major realms of Classical physics:<br> Newtonian mechanics</p>
-                <a href="#" class="btn btn-link text-success ps-0">Learn More -></a>
-            </div>
-            <div class="popular-image mt-4 mt-md-0">
-                <img src="./1/c1.png" alt="Popular Courses" class="img-fluid" style="max-width: 400px;">
-            </div>
+      <ul class="com-list">Legal
+        <li class="com-el">Terms of Service</li>
+        <li class="com-el">Privacy Policy</li>
+        <li class="com-el">Cookie Policy</li>
+        <li class="com-el">Security</li>
+      </ul>
+
+      <ul class="com-list">Services
+        <li class="com-el">Consulting</li>
+        <li class="com-el">Development</li>
+        <li class="com-el">Design</li>
+        <li class="com-el">Support</li>
+      </ul>
+
+      <ul class="com-list">Resources
+        <li class="com-el">Documentation</li>
+        <li class="com-el">Tutorials</li>
+        <li class="com-el">Community</li>
+        <li class="com-el">Help Center</li>
+      </ul>
+
+      <ul class="com-list">Contact
+        <div class="com-img-el">
+          <img src="./foo1.png" alt="phone" />
+          <li class="com-el">+1 (800) 123‑4567</li>
         </div>
-    </section>
-
-    
-    <section class="newsletter text-center" style="background-color: white;">
-        <h5 class="text-success" style="margin-bottom: 20px;">Newsletter</h5>
-        <h2 class="fw-bold" style="margin-bottom: 20px;">Every Client Matters</h2>
-        <p>Problems trying to resolve the conflict between physics and Newtonian mechanics</p>
-        <form class="d-flex justify-content-center flex-wrap gap-2">
-            <input type="email" class="form-control custom-input " style="max-width: 400px;" placeholder="Your Email">
-            <button class="btn btn-success">Subscribe</button>
-        </form>
-    </section>
-
-    
-    <footer class=" text-center py-4" style="background-color: rgb(240, 238, 238);">
-        <div class="container">
-            <div class="com-info">
-                
-                <ul class="com-list">Company Info
-                    <li class="com-el">About Us</li>
-                    <li class="com-el">Carrier</li>
-                    <li class="com-el">We are hiring</li>
-                    <li class="com-el">Blog</li>
-                </ul>
-                <ul class="com-list">Legal
-                    <li class="com-el">About Us</li>
-                    <li class="com-el">Carrier</li>
-                    <li class="com-el">We are hiring</li>
-                    <li class="com-el">Blog</li>
-                </ul>
-                <ul class="com-list">Features
-                    <li class="com-el">About Us</li>
-                    <li class="com-el">Carrier</li>
-                    <li class="com-el">We are hiring</li>
-                    <li class="com-el">Blog</li>
-                </ul>
-                <ul class="com-list">Resources
-                    <li class="com-el">About Us</li>
-                    <li class="com-el">Carrier</li>
-                    <li class="com-el">We are hiring</li>
-                    <li class="com-el">Blog</li>
-                </ul>
-                <ul class="com-list">Resources
-                    <div class="com-img-el">
-                    <img src="./foo1.png">
-                    <li class="com-el">87700340343</li>
-                    </div>
-                    <div class="com-img-el">
-                        <img src="./foo2.png">
-                        <li class="com-el">Washington 4517mcld</li>
-                        </div>
-                        <div class="com-img-el">
-                            <img src="./foo3.png">
-                            <li class="com-el">dobra.email.com</li>
-                            </div>
-                    
-                </ul>
-                
-            </div>
+        <div class="com-img-el">
+          <img src="./foo2.png" alt="location" />
+          <li class="com-el">123 Main St, New York, NY</li>
         </div>
-    </footer>
+        <div class="com-img-el">
+          <img src="./foo3.png" alt="email" />
+          <li class="com-el">info@eduplatform.com</li>
+        </div>
+      </ul>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const animatedItems = document.querySelectorAll('.animate');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const delay = entry.target.dataset.delay || 0;
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, delay);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    animatedItems.forEach(item => observer.observe(item));
+  </script>
+
 </body>
 </html>
+

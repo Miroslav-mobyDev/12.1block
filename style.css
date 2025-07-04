@@ -1,17 +1,37 @@
+/* === ОСНОВНОЕ === */
 body {
     font-family: Arial, sans-serif;
 }
-ul{
+ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-
-
-.btn{
-    background-color: #96BB7C; 
-    color:#f0f0f0;
+/* === КНОПКИ === */
+.btn {
+    background-color: #96BB7C;
+    color: #fff;
+    border: none;
+    transition: 0.3s ease;
 }
 
+.btn:hover {
+    background-color: #7fa96d;
+}
+
+.btn-outline-success {
+    border: 2px solid #96BB7C;
+    color: #96BB7C !important;
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    background-color: #96BB7C;
+    color: #fff !important;
+}
+
+/* === HERO === */
 .hero-section {
     padding: 80px 0;
     display: flex;
@@ -28,7 +48,12 @@ ul{
     height: auto;
 }
 
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+/* === FEATURES === */
 .features {
     padding: 80px 0;
     background: #f9f9f9;
@@ -42,9 +67,12 @@ ul{
     transition: 0.3s;
 }
 
+/* === COURSES === */
+.our-courses {
+    background-color: #FFF2F3;
+}
 
-
-
+/* === NEWSLETTER === */
 .newsletter {
     padding: 80px 0;
     background: #f0f0f0;
@@ -57,7 +85,77 @@ ul{
     max-width: 688px;
 }
 
+/* === FOOTER / CONTACT === */
+footer {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
 
+.com-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.com-list {
+    font-weight: 700;
+    text-align: left;
+}
+
+.com-list li {
+    font-weight: 400;
+    margin: 8px 0;
+    margin-left: 10px;
+}
+
+.com-img-el {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* === АНИМАЦИИ === */
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up {
+    transform: translateY(40px);
+}
+.slide-left {
+    transform: translateX(-40px);
+}
+.zoom-in {
+    transform: scale(0.9);
+}
+.fade-in {
+    transform: none;
+    opacity: 0;
+}
+
+.animate.visible.slide-left {
+    transform: translateX(0);
+}
+.animate.visible.zoom-in {
+    transform: scale(1);
+}
+.animate.visible.fade-in {
+    opacity: 1;
+}
+
+/* === АДАПТИВ === */
 @media (max-width: 768px) {
     .hero-section {
         flex-direction: column;
@@ -71,39 +169,13 @@ ul{
     .newsletter input {
         width: 100%;
     }
-}
-.hero-container{
-display: flex;
-}
-.features-container{
-    
-}
-.row{
-    
-}
-.f-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.our-courses{
-    background-color:  #FFF2F3;
-    
-}
-.com-info{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.com-list{
-    font-weight: 700;
 
-}
-.com-el{
-    font-weight: 400;
-    margin-left: 20px;
-}
-.com-img-el{
-    display: flex;
+    .com-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .com-list {
+        text-align: center;
+    }
 }
